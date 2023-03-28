@@ -12,7 +12,8 @@ main {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  min-height: 100vh;
+  height: 100vh;
+  min-height: fit-content;
   width: 100%;
   padding: 0.5rem;
   background-color: hsl(30, 38%, 92%);
@@ -57,7 +58,7 @@ main {
   width: 100%;
   border: none;
   outline: none;
-  color: white;
+  color: hsl(0, 0%, 100%);
   background-color: hsl(158, 36%, 37%);
   border-radius: 10px;
   height: 55px;
@@ -95,50 +96,26 @@ main {
 .attribution a {
   color: hsl(228, 45%, 44%);
 }
-@media (max-width : 2560px){
-    .col_2 p:nth-child(1) {
-        font-size: 25px;
-    }
-    .col_2 h1{
-        font-size: 55px;
-    } 
-    .col_2 p:nth-child(3) {
-        font-size: 30px;
-    }
-    .prices p:nth-child(1){
-        font-size: 3.5rem;
-    }
-    .prices p:nth-child(2){
-        font-size: 2rem;
-    }
-    .cta{
-        height: 75px;
-        font-size: 30px;
-    }
-    .cta img{
-        width: 30px;
-    }
+@media (max-width: 1024px) {
+  .card {
+    width: 80%;
+  }
 }
-@media (max-width : 1024px){
-    .card{
-        width: 80%;
-    }
+@media (max-width: 768px) {
+  .card {
+    width: 100%;
+  }
 }
-@media (max-width : 768px){
-    .card{
-        width: 100%;
-    }
-}
-@media (max-width :425px){
-    .card{
-        width: 100%;
-        grid-template-columns: 1fr;
-        grid-template-rows: 300px 500px;
-    }
-    .col_1{
-        border-radius: 15px 15px 0 0;
-    }
-    .col_2{
-        border-radius: 0 0 15px 15px;
-    }
+@media (max-width: 425px) {
+  .card {
+    width: 100%;
+    grid-template-columns: 1fr;
+    grid-template-rows: 250px 550px;
+  }
+  .col_1 {
+    border-radius: 15px 15px 0 0;
+  }
+  .col_2 {
+    border-radius: 0 0 15px 15px;
+  }
 }
